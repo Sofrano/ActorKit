@@ -37,7 +37,7 @@ class MyActor: Actor {
   }
 }
 ```
-#### Register Actor in ActorSystem
+#### Create Actor in ActorSystem
 
 ```swift
 let actorSystem = ActorSystem()
