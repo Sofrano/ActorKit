@@ -13,6 +13,39 @@ Actor - Universal primitive of parallel execution. The actor model in computer s
 
 - https://en.wikipedia.org/wiki/Actor_model
 
+## Usage
+
+# Create Message
+
+```swift
+struct MyMessage: AKMessage {
+    var text: String
+}
+```
+
+# Create Actor Subclass
+
+```swift
+class MyActor: Actor {
+  override func onReceive(_ msg: AKMessage) {
+    switch msg {
+        case let msg as MyMessage:
+            print(msg.text)
+        default:
+            unhandled(msg)
+        }
+  }
+}
+```
+# Register Actor in ActorSystem
+
+```swift
+let actorSystem = ActorSystem()
+let actor = actorSystem.actorOf(MyActor.emptyProps(), name: "my-actor")
+// and sending message
+actor ! MyMessage(text: "this is my message")
+```
+
 ## Author
 
 Dmitriy Safarov, kazdevelop@gmail.com
