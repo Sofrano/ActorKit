@@ -10,7 +10,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-struct StatisticsфViewModel {
+struct StatisticsViewModel {
     let input = Input()
     let output: Output
     
