@@ -18,3 +18,11 @@ Dmitriy Safarov, kazdevelop@gmail.com
 ## License
 
 ActorKit is available under the MIT license
+
+## Today Task List
+
+- [ ] Actor Lifecycle
+- [ ] Actors context correction
+- [ ] Actor Watch
+- [ ] Supervisor
+- [ ] Error handling and processing
