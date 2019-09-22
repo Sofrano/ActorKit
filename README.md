@@ -15,7 +15,7 @@ Actor - Universal primitive of parallel execution. The actor model in computer s
 
 ## Usage
 
-### Create Message
+#### Create Message
 
 ```swift
 struct MyMessage: AKMessage {
@@ -23,7 +23,7 @@ struct MyMessage: AKMessage {
 }
 ```
 
-### Create Actor Subclass
+#### Create Actor Subclass
 
 ```swift
 class MyActor: Actor {
@@ -37,7 +37,7 @@ class MyActor: Actor {
   }
 }
 ```
-### Register Actor in ActorSystem
+#### Register Actor in ActorSystem
 
 ```swift
 let actorSystem = ActorSystem()
